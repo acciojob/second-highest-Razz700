@@ -10,6 +10,9 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			if (arr.length==0 || arr.length==1) {return -Infinity;		
+			}
+			else{
 			 let temp=0;
 		for(let k=0;k<arr.length-1;k++){
 for (let j = k+1; j < arr.length; j++) {
@@ -25,12 +28,12 @@ for (let j = k+1; j < arr.length; j++) {
 			
 			
 		}
-
+}
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			var n = rompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
+				arr[i] = rompt("Enter element " + (i+1));
 			}
 			alert(secondHighest(arr));
 		}
